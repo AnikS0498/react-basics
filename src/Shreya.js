@@ -7,6 +7,7 @@ function Shreya() {
       <h1>Shreya</h1>
       <Mitra nickname="tini" fathersName="Soumya Mitra"/>
       {/* <button className="btn btn-primary">Shreya</button> */}
+      <h2>Sundori ❤️😘</h2>
     </div>
   );
 }

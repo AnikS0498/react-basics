@@ -39,7 +39,7 @@ export default class Counter extends Component {
         <button className="btn btn-warning" onClick={this.handleButton3Click}>
           +10
         </button>
-        <p>{this.state.counter}</p>
+s        <p>{this.state.counter}</p>
         <p>{this.state.counter10}</p>
       </div>
     );

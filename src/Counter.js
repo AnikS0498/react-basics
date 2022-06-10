@@ -3,10 +3,11 @@ import React, { Component } from "react";
 export default class Counter extends Component {
   constructor() {
     super();
-    this.state = { counter: 0 };
-
+    this.state = { counter: 0 ,counter10:10};
+    
     // this.handleButtonClick = this.handleButtonClick.bind(this);
     this.handleButton2Click = this.handleButton2Click.bind(this);
+    this.handleButton3Click = this.handleButton3Click.bind(this);
   }
 
   handleButtonClick = () => {
@@ -18,6 +19,10 @@ export default class Counter extends Component {
     console.log("- Button has been clicked");
     this.setState({ counter: this.state.counter - 1 });
   };
+  handleButton3Click = () => {
+    //console.log("- Button has been clicked");
+    this.setState({ counter10: this.state.counter10 +10 });
+  };
 
   render() {
     return (
@@ -28,10 +33,14 @@ export default class Counter extends Component {
         >
           +1
         </button>
-        <button className="btn btn-danger" onClick={this.handleButton2Click}>
+        <button className="btn btn-danger mr-2" onClick={this.handleButton2Click}>
           -1
         </button>
+        <button className="btn btn-warning" onClick={this.handleButton3Click}>
+          +10
+        </button>
         <p>{this.state.counter}</p>
+        <p>{this.state.counter10}</p>
       </div>
     );
   }
